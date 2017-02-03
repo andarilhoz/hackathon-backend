@@ -11,6 +11,8 @@ router.get('/fetch',(req,res) =>{
 		let usersWithoutConta = user.filter(user =>{
 			return user.contas.length <= 0
 		})
+	   res.sendStatus(200)
+	   console.log('buscando usuarios sem conta')
 	   users.fetchAllContas(usersWithoutConta)
 
 	})

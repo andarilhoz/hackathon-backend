@@ -20,6 +20,7 @@ const INFO_TABLE = '#ctl00_PlaceHolderMain_controle_pnlVizualizarFaturas'
 function getEletropauloData(numInscricao, cpf){
   let nightmare = Nightmare({ show: false});
 
+  console.log('iniciando bot');
   return nightmare
     .goto(ENDPOINT)
     .wait(NUM_INSCRICAO_INPUT)
@@ -40,6 +41,7 @@ function getEletropauloData(numInscricao, cpf){
     })
     .end()
     .then(function (result) {
+      console.log('terminado processo bot')
       result.shift()
       return result
     })
