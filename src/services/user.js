@@ -28,12 +28,13 @@ class UserService{
                            res.locals  = {};
                            res.locals["success"]='Registration Success';
                            res.status(201).send(account._id);
+                           console.log('Realizando busca na eletropaulo')
                            conta.getEletropauloData(fields.inscricao,fields.cpf).then(x =>{
                                 x.map((obj)=>{account.contas.push(obj)});
                                 account.save();
                            })
 			   .catch((err) => {
-			   	console.log("Erro ao buscar contas na eletropaulo")
+			   	console.log("Erro ao buscar contas na eletropaulo" + err)
 			   })
                         }
                     });

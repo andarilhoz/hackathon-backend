@@ -6,7 +6,7 @@ const express    = require('express'),
 
 router.use(bodyParser.json());
 
-router.get('/penis',(req,res) =>{
+router.get('/fetch',(req,res) =>{
  users.findAllUsers().lean().exec((err,user)=>{
 		let usersWithoutConta = user.filter(user =>{
 			return user.contas.length <= 0
