@@ -547,6 +547,7 @@ var TopFiveUsersComponent = (function () {
                 });
             });
             _this.topUsers.sort(function (user1, user2) { return user1.userScore < user2.userScore ? 1 : -1; });
+            _this.topUsers = _this.topUsers.slice(0, 4);
         }, function (error) {
             console.log(error);
         });
@@ -1260,7 +1261,7 @@ module.exports = ""
 /***/ 736:
 /***/ (function(module, exports) {
 
-module.exports = ".p-b50 {\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.logo {\r\n    height: 200px;\r\n}\r\n\r\n.p-t50 {\r\n    padding-top: 50px;\r\n    background-image: url('./assets/home-bg.jpg');\r\n    background-attachment: fixed;\r\n    background-position: top;\r\n    opacity: 0.8;\r\n}"
+module.exports = ".p-b50 {\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.p-t50 {\r\n    padding-top: 50px;\r\n    background-image: url('./assets/home-bg.jpg');\r\n    background-attachment: fixed;\r\n    background-position: top;\r\n    opacity: 0.8;\r\n}"
 
 /***/ }),
 
@@ -1323,7 +1324,7 @@ module.exports = "\n <div class=\"carousel carousel-slider center\" data-indicat
 /***/ 745:
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"right-align\">Meu Dashboard</h3>\n\n<hr>\n<br>\n<div class=\"row\">\n  <div class=\"col s6\">\n    <b>Nome: </b><span>{{user.username}}</span><br><br>\n    <b>Nº de Instalação: </b><span>{{user.inscricao}}</span>\n  </div>\n  <div class=\"col s6\">\n    <b>Posição no Ranking:</b> <span>{{myData.pos}}º</span> \n  </div>\n</div>\n\n\n<div class=\"row\">\n  <div class=\"col s4 offset-s4\">\n  <div class=\"card red accent-1 \">\n    <div class=\"card-content center-align \">\n        <b>SAVES</b><br>\n    <b>(Pontuação Acumulada)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.userScore}}</p>\n    </div>\n  </div>\n  </div>\n</div>\n\n\n<div class=\"row\">\n    <div class=\"col s4  offset-s1\">\n  <div class=\"card green lighten-1 \">\n    <div class=\"card-content center-align \">\n        <b>ECONOMIA</b><br>\n    <b>(Percentual de Economia do último mês)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.lastMonth}}%</p>\n    </div>\n  </div>\n  </div>\n\n  <div class=\"col s4 offset-s1 \">\n  <div class=\"card  cyan accent-3 \">\n    <div class=\"card-content center-align \">\n        <b>MÉDIA</b><br>\n    <b>(Média anual dos gastos)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.media | currency:'BRL':true}}</p>\n    </div>\n  </div>\n  </div>\n\n\n</div>\n\n\n\n"
+module.exports = "<h3 class=\"right-align\">Meu Dashboard</h3>\n\n<hr>\n<br>\n<div class=\"row\">\n  <div class=\"col s6\">\n    <b>Nome: </b><span>{{user.username}}</span><br><br>\n    <b>Nº de Instalação: </b><span>{{user.inscricao}}</span>\n  </div>\n  <div class=\"col s6\">\n    <b>Posição no Ranking:</b> <span>{{myData.pos}}º</span> \n  </div>\n</div>\n\n\n<div class=\"row\">\n  <div class=\"col s4 offset-s4\">\n  <div class=\"card red accent-1 \">\n    <div class=\"card-content center-align \">\n        <b>SAVES</b><br>\n    <b>(Pontuação Acumulada)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.userScore}}</p><strong> *O score é atualizado de hora em hora</strong>\n    </div>\n  </div>\n  </div>\n</div>\n\n\n<div class=\"row\">\n    <div class=\"col s4  offset-s1\">\n  <div class=\"card green lighten-1 \">\n    <div class=\"card-content center-align \">\n        <b>ECONOMIA</b><br>\n    <b>(Percentual de Economia do último mês)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.lastMonth}}%</p> \n    </div>\n  </div>\n  </div>\n\n  <div class=\"col s4 offset-s1 \">\n  <div class=\"card  cyan accent-3 \">\n    <div class=\"card-content center-align \">\n        <b>MÉDIA</b><br>\n    <b>(Média anual dos gastos)</b>\n    </div>\n    <div class=\"card-content white  center-align\">\n      <p>{{myData.media | currency:'BRL':true}}</p>\n    </div>\n  </div>\n  </div>\n\n\n</div>\n\n\n\n"
 
 /***/ }),
 
@@ -1365,7 +1366,7 @@ module.exports = "<div class=\"row\">\n<div class=\"block login col s10\">\n  <f
 /***/ 751:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"p-t50\" style=\"background-attachment:fixed; background-position:top;\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\"> \t\n\t\t\t\t<div class=\"col-md-12 center-align\">\n\t\t\t\t\t<div class=\"p-b50 text-center\"><img class=\"logo\" src=\"./assets/light-bulb.png\"></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>"
+module.exports = "<div class=\"p-t50\" style=\"background-attachment:fixed; background-position:top;\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\"> \t\n\t\t\t\t<div class=\"col-md-12 center-align\">\n\t\t\t\t\t<div class=\"p-b50 text-center\"><img class=\"logo responsive-img\" src=\"./assets/save_energy_sane_the_planet.png\"></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>"
 
 /***/ }),
 

@@ -37,6 +37,9 @@ app.use('/api/login',login)
 app.use('/api/logout',logout)
 app.use('/api/me',me)
 
+app.get('/:algo', function(req, res) {
+  res.redirect('/');
+});
 module.exports = app
 
 
