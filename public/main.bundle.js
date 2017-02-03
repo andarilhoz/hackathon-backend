@@ -1204,7 +1204,7 @@ module.exports = ""
 /***/ 728:
 /***/ (function(module, exports) {
 
-module.exports = ".page-header{\r\n    height: auto;\r\n    padding: 40px 0 20px;\r\n}"
+module.exports = ".page-header{\r\n    height: auto;\r\n    padding: 40px 0 20px;\r\n}\r\n\r\nh2 {\r\n    font-size: 25px;    \r\n}"
 
 /***/ }),
 
@@ -1260,14 +1260,14 @@ module.exports = ""
 /***/ 736:
 /***/ (function(module, exports) {
 
-module.exports = ".p-b50 {\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.logo {\r\n    height: 200px;\r\n}\r\n\r\n.p-t50 {\r\n    padding-top: 50px;\r\n}"
+module.exports = ".p-b50 {\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.logo {\r\n    height: 200px;\r\n}\r\n\r\n.p-t50 {\r\n    padding-top: 50px;\r\n    background-image: url('./assets/home-bg.jpg');\r\n    background-attachment: fixed;\r\n    background-position: top;\r\n    opacity: 0.8;\r\n}"
 
 /***/ }),
 
 /***/ 737:
 /***/ (function(module, exports) {
 
-module.exports = ".brand-logo img{\r\n    height: 100px;\r\n    width: 120px;\r\n    margin-left: 2em;\r\n}\r\n\r\n\r\n\r\nnav {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav i, nav [class^=\"mdi-\"], nav [class*=\"mdi-\"], nav i.material-icons {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav .button-collapse i {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav .brand-logo { \r\n    font-size: 1.6rem; \r\n}\r\n\r\n@media only screen and (min-width: 601px){\r\n    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\r\n        height: 100px;\r\n        line-height: 100px;\r\n            margin-top: -20px;\r\n    }\r\n}\r\n.f-nav{ z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;} /* this make our menu fixed top */\r\n"
+module.exports = ".brand-logo img{\r\n    height: 100px;\r\n    width: 120px;\r\n    margin-left: 2em;\r\n}\r\n\r\n\r\n\r\nnav {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav i, nav [class^=\"mdi-\"], nav [class*=\"mdi-\"], nav i.material-icons {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav .button-collapse i {\r\n    height: 100px;\r\n    line-height: 100px;\r\n}\r\n\r\nnav .brand-logo { \r\n    font-size: 1.6rem; \r\n}\r\n\r\n@media only screen and (min-width: 601px){\r\n    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\r\n        height: 100px;\r\n        line-height: 100px;\r\n            margin-top: -20px;\r\n    }\r\n}\r\n.f-nav{ z-index: 9999; position: fixed; left: 0; top: 15px; width: 100%;} /* this make our menu fixed top */\r\n\r\n.navbar{\r\n    background-color: #efefef\r\n}\r\n\r\na{\r\n    color: black;\r\n}"
 
 /***/ }),
 
@@ -1309,7 +1309,7 @@ module.exports = "<app-logo-space></app-logo-space>\n<app-navbar></app-navbar>\n
 /***/ 743:
 /***/ (function(module, exports) {
 
-module.exports = "<section *ngIf=\"router.url == '/' || router.url == '/home'  \" class=\"page page-header blue\">\n  <div class=\"container center-align\">\n    <h2 class=\"white-text\">{{dicaAtual}}\n      <span class=\"heading-divider\"></span>\n    </h2>\n    <div class=\"row\">\n      <!--<span class=\"white-text\">{{ router.url}}</span>-->\n    </div>\n  </div>\n</section>"
+module.exports = "<section *ngIf=\"router.url == '/' || router.url == '/home'  \" class=\"page page-header blue\">\n  <div class=\"container center-align\">\n    <h2 class=\"white-text\">DICA DE ECONOMIA: {{dicaAtual}}\n      <span class=\"heading-divider\"></span>\n    </h2>\n    <div class=\"row\">\n      <!--<span class=\"white-text\">{{ router.url}}</span>-->\n    </div>\n  </div>\n</section>"
 
 /***/ }),
 
@@ -1365,14 +1365,14 @@ module.exports = "<div class=\"row\">\n<div class=\"block login col s10\">\n  <f
 /***/ 751:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"p-t50\" style=\"background-image:url(./assets/headerimage.jpg); background-attachment:fixed; background-position:top;\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\"> \t\n\t\t\t\t<div class=\"col-md-12 center-align\">\n\t\t\t\t\t<div class=\"p-b50 text-center\"><img class=\"logo\" src=\"./assets/light-bulb.png\"></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>"
+module.exports = "<div class=\"p-t50\" style=\"background-attachment:fixed; background-position:top;\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\"> \t\n\t\t\t\t<div class=\"col-md-12 center-align\">\n\t\t\t\t\t<div class=\"p-b50 text-center\"><img class=\"logo\" src=\"./assets/light-bulb.png\"></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>"
 
 /***/ }),
 
 /***/ 752:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav-container\">\n  <div class=\"nav-wrapper  grey lighten-1 \">\n    <a routerLink=\"/home\" class=\"brand-logo\"><img src=\"./assets/light-bulb.png\" alt=\"\"></a>\n        <ul class=\"right hide-on-med-and-down\">\n          <li><a routerLink=\"/about\">Sobre</a></li>\n          <li><a routerLink=\"/global\">Dashboard Global</a></li>\n          <li *ngIf=\"!logged && router.url != '/login'\"><a routerLink=\"/login\">Entrar</a></li>\n          <li *ngIf=\"logged\"><a routerLink=\"/login\">Sair</a></li>\n          <li *ngIf=\"!logged && router.url == '/login'\"><a routerLink=\"/register\">Registrar</a></li>\n          <li *ngIf=\"logged\">\n              <a routerLink=\"/dashboard\" class=\"badge\">\n                  {{ user.username  | uppercase}}\n              </a>\n          </li>\n        </ul>\n  </div>\n</nav>\n\n"
+module.exports = "<nav class=\"nav-container\">\n    <div class=\"nav-wrapper navbar\">\n    <a routerLink=\"/home\" class=\"brand-logo\"><img src=\"./assets/light-bulb.png\" alt=\"\"></a>\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\n        <ul class=\"right hide-on-med-and-down\">\n          <li><a routerLink=\"/about\">Sobre</a></li>\n          <li><a routerLink=\"/global\">Dashboard Global</a></li>\n          <li *ngIf=\"!logged && router.url != '/login'\"><a routerLink=\"/login\">Entrar</a></li>\n          <li *ngIf=\"logged\"><a routerLink=\"/login\">Sair</a></li>\n          <li *ngIf=\"!logged && router.url == '/login'\"><a routerLink=\"/register\">Registrar</a></li>\n          <li *ngIf=\"logged\">\n              <a routerLink=\"/dashboard\" class=\"badge\">\n                  {{ user.username  | uppercase}}\n              </a>\n          </li>\n        </ul>\n    </div>\n  </nav>\n"
 
 /***/ }),
 
